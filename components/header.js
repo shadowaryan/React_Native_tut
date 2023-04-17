@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <View className="h-24 pt-9 bg-red-500">
-      <Text className="text-center justify-center pt-4 font-bold text-xl">Rocketo</Text>
+    <View className="pt-12">
+      <Text className=" text-center justify-center pt-4 font-bold text-6xl">Rocketo</Text>
     </View>
   )
 }

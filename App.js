@@ -3,13 +3,13 @@ import { ImageBackground,Text, View, Button } from 'react-native';
 import Body from './components/body';
 import Header from './components/header';
 
-import { AppRegistry } from 'react-native';
+// import { AppRegistry } from 'react-native';
 
 
-function App() {
+export default function App() {
   
 
-  const image = {uri: 'https://scontent-del1-1.cdninstagram.com/v/t51.2885-15/330757218_2998578600437213_7838478984784915687_n.webp?stp=dst-jpg_e35&_nc_ht=scontent-del1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=kL9JTLugpiQAX8y6nNT&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzAzODY0OTMzMjM5MzQ4NjEyOQ%3D%3D.2-ccb7-5&oh=00_AfDPIwY6bGYhr31ygBZ1Kn4PLr3_jlbnOdBDm9LyDII2aA&oe=643D4E1D&_nc_sid=1527a3'};
+  const image = {uri: 'https://lh3.googleusercontent.com/u/6/drive-viewer/AAOQEOSz8Gu3KeT0vxdE6idxiAG5P20QWXzcSavvhT9Sb4RE5VP7gT-17sFluhWkEEVgDOTQFc_0lkfaJrFf88Xlw9fz6AjF=w1158-h906'};
 
   return (
     <View className="flex-1">
@@ -23,9 +23,9 @@ function App() {
   );
 }
 
-AppRegistry.registerComponent('main',() => App);
+// AppRegistry.registerComponent('main',() => App);
 
-export default App;
+//  App;
 
 // const styles = StyleSheet.create({
 //   container: {

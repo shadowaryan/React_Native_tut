@@ -2,7 +2,6 @@ import { View, Text, TextInput, } from 'react-native'
 import React from 'react'
 import { useState } from 'react';
 import Button_login from './button_login';
-// import { Button, Icon, WhiteSpace, WingBlank } from '@ant-design/react-native'
 
 export default function Body() {
 
@@ -10,31 +9,29 @@ export default function Body() {
   const [password, setPassword] = useState("None");
 
   const sumbitHandler = () =>{
-    return(
-        <>
-        <Text className="text-amber-100">Username = {username}, Password = {password}</Text>
-    
-        </>
-    )
+    return(console.log(username,password))
   }
 
   return (
-    <View className='flex-1 items-center justify-center'>
-      <Text className="text-white pb-2 font-extrabold font">Enter Your Credentials:</Text>
-      <Text className="text-amber-200 font-bold">User Name</Text>
+    <View className='pt-28 items-center justify-center'>
+      
+      <Text className="pt-1 pb-2 font-bold text-xl">Enter Your Credentials:</Text>
+
+      <Text className="font-bold text-lg">User Name</Text>
       <TextInput 
-      className="text-black border-dotted border-2 border-black p-2 m-2 w-48 border-spacing bg-gray-400" 
+      className="text-black border-dotted border-2 border-black p-2 m-2 w-48 border-spacing bg-white" 
       placeholder='  eg- username'
       onChangeText={(e)=>setUsername(e)}/>
-      <Text className="text-amber-200 font-bold">Password</Text>
+      
+      <Text className="font-bold text-lg">Password</Text>
       <TextInput 
-      className="text-black border-dotted border-2 border-black p-2 m-2 w-48 border-spacing bg-gray-400" 
+      className="text-black border-dotted border-2 border-black p-2 m-2 w-48 border-spacing bg-white" 
       placeholder='  eg- user1234'
-    //   keyboardType='number-pad'
       onChangeText={(e)=>setPassword(e)}/>
-      {/* <Button onPress={sumbitHandler} title="Sign In" className=""/> */}
-      <Button_login/>
-       {/* <Button type="primary">primary</Button> */}
+      {/* <Text className="text-blue-50"> User - {username} , Password - {password} </Text> */}
+
+      <Button_login className="" username = {username} password={password}/>
+
       </View>
   )
 }
