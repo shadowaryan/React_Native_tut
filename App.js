@@ -9,7 +9,7 @@ import Header from './components/header';
 export default function App() {
   
 
-  const image = {uri: 'https://lh3.googleusercontent.com/u/6/drive-viewer/AAOQEOSz8Gu3KeT0vxdE6idxiAG5P20QWXzcSavvhT9Sb4RE5VP7gT-17sFluhWkEEVgDOTQFc_0lkfaJrFf88Xlw9fz6AjF=w1158-h906'};
+  const image = {uri: 'https://lh3.googleusercontent.com/u/6/drive-viewer/AAOQEOQC-QSIPFAcjqS-LVnQXMb7x7-dwDh__6PUFkFtR_i9tCCNbR8fmfb2IOweZ7MnJBi0sHo5hNfDF02Lc4zUgpoghTip3w=w1920-h906'};
 
   return (
     <View className="flex-1">
